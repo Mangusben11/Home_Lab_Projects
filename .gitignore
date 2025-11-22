@@ -1,0 +1,297 @@
+# =============================================================================
+# Cybersecurity Lab .gitignore
+# Protects sensitive files from accidental commits
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# CREDENTIALS AND SECRETS (CRITICAL - Never commit these)
+# -----------------------------------------------------------------------------
+
+# Password files
+*.password
+*.passwd
+*passwords*
+*credentials*
+*secrets*
+creds.txt
+passwords.txt
+credentials.txt
+secrets.txt
+pass.txt
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.pem
+*.key
+authorized_keys
+known_hosts
+
+# API keys and tokens
+.env
+.env.*
+*.token
+api_keys.txt
+tokens.txt
+
+# Kerberos tickets and hashes
+*.kirbi
+*.ccache
+*.keytab
+krb5cc_*
+
+# NTLM hashes and credential dumps
+*.ntds
+ntds.dit
+SYSTEM
+SAM
+SECURITY
+hashdump.txt
+hashes.txt
+*_hashes.txt
+secretsdump*
+mimikatz_output*
+lsass*
+
+# Certificate files with private keys
+*.pfx
+*.p12
+
+# -----------------------------------------------------------------------------
+# TOOL OUTPUT (May contain sensitive data)
+# -----------------------------------------------------------------------------
+
+# Nmap output
+*.nmap
+*.gnmap
+*.xml
+nmap_output/
+
+# Metasploit
+*.rc
+loot/
+*.msf4
+
+# BloodHound
+*.json
+!package.json
+!package-lock.json
+*.zip
+bloodhound_output/
+sharphound_output/
+
+# Responder
+Responder-Session.log
+*-NTLMv*
+Responder.db
+logs/
+
+# CrackMapExec
+*.db
+cme_output/
+
+# Impacket output
+*_output.txt
+
+# Hashcat/John
+*.pot
+*.restore
+hashcat.potfile
+john.pot
+
+# Burp Suite
+*.burp
+burp_output/
+
+# -----------------------------------------------------------------------------
+# EXPLOITS AND PAYLOADS (Careful with these)
+# -----------------------------------------------------------------------------
+
+# Compiled exploits
+*.exe
+*.dll
+*.so
+*.bin
+
+# Shellcode
+shellcode/
+payloads/
+*.raw
+*.sc
+
+# Msfvenom output
+reverse_shell*
+bind_shell*
+meterpreter*
+
+# -----------------------------------------------------------------------------
+# VIRTUAL MACHINE FILES (Large, not for git)
+# -----------------------------------------------------------------------------
+
+*.vmdk
+*.vmx
+*.vdi
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow2
+*.iso
+
+# VMware
+*.vmem
+*.vmsn
+*.vmsd
+*.nvram
+*.vmss
+*.vmxf
+.vagrant/
+
+# VirtualBox
+VirtualBox VMs/
+
+# -----------------------------------------------------------------------------
+# OPERATING SYSTEM FILES
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# -----------------------------------------------------------------------------
+# EDITOR AND IDE FILES
+# -----------------------------------------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+
+# Emacs
+*~
+\#*\#
+.#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------------------------------------------------------
+# LOGS AND TEMPORARY FILES
+# -----------------------------------------------------------------------------
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# -----------------------------------------------------------------------------
+# PYTHON (If using Python scripts)
+# -----------------------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# -----------------------------------------------------------------------------
+# NODE.JS (If using Node tools)
+# -----------------------------------------------------------------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------------------------------------------------------
+# DOCUMENTATION EXCEPTIONS (These SHOULD be committed)
+# -----------------------------------------------------------------------------
+
+# Allow markdown files (but not in excluded directories)
+!*.md
+!README.md
+!CHANGELOG.md
+
+# Allow template files
+!*TEMPLATE*
+
+# -----------------------------------------------------------------------------
+# PROJECT-SPECIFIC EXCLUSIONS
+# -----------------------------------------------------------------------------
+
+# Screenshots with potentially sensitive info (keep templates, exclude actual)
+# Uncomment if needed:
+# screenshots/
+
+# Personal notes that shouldn't be public
+private_notes/
+personal/
+PRIVATE_*
+
+# Lab-specific data that shouldn't be shared
+lab_data/
+target_data/
+
+# -----------------------------------------------------------------------------
+# SAFETY NET - Explicit exclusions for common mistake files
+# -----------------------------------------------------------------------------
+
+# Anything that looks like it contains passwords or hashes
+*password*
+*secret*
+*credential*
+*hash*
+*dump*
+*loot*
+
+# Exception: Allow documentation about these topics
+!**/docs/*
+!**/Documentation_Templates/*

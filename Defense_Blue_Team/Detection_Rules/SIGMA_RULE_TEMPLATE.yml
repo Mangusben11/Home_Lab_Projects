@@ -1,0 +1,68 @@
+title: [Descriptive Title of Detection]
+id: [Generate UUID: uuidgen or online generator]
+status: experimental  # experimental, test, stable, deprecated, unsupported
+description: |
+    Detects [what this rule detects].
+    [Additional context about the attack technique]
+references:
+    - https://attack.mitre.org/techniques/TXXXX/
+    - [Additional references]
+author: Benjamina
+date: YYYY/MM/DD
+modified: YYYY/MM/DD
+
+# MITRE ATT&CK mapping
+tags:
+    - attack.tactic_name       # e.g., attack.credential_access
+    - attack.tXXXX             # e.g., attack.t1003.001
+    - attack.tXXXX.XXX         # Sub-technique if applicable
+
+# Log source definition
+logsource:
+    category: process_creation  # process_creation, network_connection, file_event, etc.
+    product: windows            # windows, linux, azure, aws, etc.
+    service: security           # security, sysmon, powershell, etc. (optional)
+
+# Detection logic
+detection:
+    selection_main:
+        # Field conditions (AND within selection)
+        EventID: 4688
+        CommandLine|contains:
+            - 'suspicious_string'
+            - 'another_string'
+
+    selection_process:
+        Image|endswith:
+            - '\malicious.exe'
+            - '\badtool.exe'
+
+    filter_legitimate:
+        # Exclusions for false positives
+        User|contains:
+            - 'SYSTEM'
+            - 'legitimate_service'
+
+    condition: (selection_main or selection_process) and not filter_legitimate
+
+# False positive documentation
+falsepositives:
+    - Legitimate administrative activity
+    - [Other known false positives]
+
+# Alert configuration
+level: high  # informational, low, medium, high, critical
+
+# Additional fields (optional)
+fields:
+    - CommandLine
+    - User
+    - ParentImage
+    - ParentCommandLine
+
+# Example log entry that would trigger this rule (for testing)
+# ---
+# EventID: 4688
+# CommandLine: "suspicious_string parameter"
+# User: attacker
+# ---
