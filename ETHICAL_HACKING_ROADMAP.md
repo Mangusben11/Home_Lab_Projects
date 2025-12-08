@@ -1,4 +1,4 @@
-# Ethical Hacking Roadmap for Benjamina
+# Ethical Hacking Roadmap for Benjamin
 **DVC Computer Science Student | VMware Lab Environment**
 
 ---
