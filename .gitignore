@@ -1,0 +1,16 @@
+# Credentials - never commit
+LAB_CREDENTIALS.md
+
+# Malware samples
+Malware_Analysis/Samples/*.exe
+Malware_Analysis/Samples/*.dll
+Malware_Analysis/Samples/*.bin
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
