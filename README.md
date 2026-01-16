@@ -11,7 +11,7 @@ Security home lab documentation and projects.
 
 | VM                  | IP           | Role                          | Domain     |
 |---------------------|--------------|-------------------------------|------------|
-| Windows Server 2022 | 10.0.0.5     | Domain Controller             | lab.local  |
+| DC01 (Win Server 2022) | 10.0.0.5  | Domain Controller             | lab.local  |
 | Kali Linux          | 10.0.0.10    | Attack box                    | -          |
 | Metasploitable2     | 10.0.0.11    | Vulnerable target             | -          |
 | Ubuntu Client       | 10.0.0.12    | Monitored endpoint            | lab.local  |
