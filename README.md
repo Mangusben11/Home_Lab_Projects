@@ -5,14 +5,21 @@ Security home lab documentation and projects.
 ## Network Configuration
 
 ### VMnet8 (10.0.0.0/24)
-| VM | IP | Role |
-|---|---|---|
-| Kali Linux | 10.0.0.10 | Attack box |
-| Metasploitable2-Linux | 10.0.0.11 | Vulnerable target |
-| Ubuntu Client | 10.0.0.12 | Monitored endpoint (Wazuh agent) |
-| Wazuh Manager | 10.0.0.13 | SIEM/Detection |
+
+**Domain:** lab.local
+**DHCP Range:** 10.0.0.10 - 10.0.0.254
+
+| VM                  | IP           | Role                          | Domain     |
+|---------------------|--------------|-------------------------------|------------|
+| Windows Server 2022 | 10.0.0.5     | Domain Controller             | lab.local  |
+| Kali Linux          | 10.0.0.10    | Attack box                    | -          |
+| Metasploitable2     | 10.0.0.11    | Vulnerable target             | -          |
+| Ubuntu Client       | 10.0.0.12    | Monitored endpoint            | lab.local  |
+| Wazuh Manager       | 10.0.0.13    | SIEM/Detection                | -          |
+| Windows 11          | DHCP         | Domain workstation            | lab.local  |
 
 ### Isolated Network (172.16.0.0/24)
-| VM | IP | Role |
-|---|---|---|
-| FLARE VM | 172.16.0.128 | Malware analysis |
+
+| VM       | IP            | Role             |
+|----------|---------------|------------------|
+| FLARE VM | 172.16.0.128  | Malware analysis |
