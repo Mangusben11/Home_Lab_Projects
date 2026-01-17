@@ -12,7 +12,7 @@ A structured progression from foundational skills to career-ready expertise in I
 - [x] Network segmentation (VMnet8 + isolated analysis network)
 - [x] Wazuh SIEM deployment
 - [x] Domain Controller setup (lab.local)
-- [ ] Domain client enrollment (Windows 11, Ubuntu)
+- [x] Domain client enrollment (Windows 11, Ubuntu)
 - [ ] Baseline documentation
 
 ### 1.2 Core Skills to Develop
@@ -166,6 +166,10 @@ A structured progression from foundational skills to career-ready expertise in I
 | Date | Activity | Phase | Notes |
 |------|----------|-------|-------|
 | 2026-01-16 | Created lab network, DC01 deployed | Phase 1 | |
+| 2026-01-16 | Windows 11 VM installed (WS01) | Phase 1 | 8GB RAM, 4 cores, 80GB disk |
+| 2026-01-17 | WS01 joined to lab.local domain | Phase 1 | Fixed DC01 static IP (was DHCP), configured DNS |
+| 2026-01-17 | Wazuh agents confirmed on WS01 + Ubuntu | Phase 1 | Upgraded Wazuh to 4.14.2, all services running |
+| 2026-01-17 | **NEXT: Brute Force Detection exercise** | Phase 2 | First portfolio piece - use hydra from Kali, detect in Wazuh |
 
 ---
 

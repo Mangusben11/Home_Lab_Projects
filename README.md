@@ -16,7 +16,7 @@ Security home lab documentation and projects.
 | Metasploitable2     | 10.0.0.11    | Vulnerable target             | -          |
 | Ubuntu Client       | 10.0.0.12    | Monitored endpoint            | lab.local  |
 | Wazuh Manager       | 10.0.0.13    | SIEM/Detection                | -          |
-| Windows 11          | DHCP         | Domain workstation            | lab.local  |
+| WS01 (Windows 11)   | DHCP         | Domain workstation            | lab.local  |
 
 ### Isolated Network (172.16.0.0/24)
 
