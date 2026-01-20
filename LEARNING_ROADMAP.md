@@ -56,7 +56,7 @@ A structured progression from foundational skills to career-ready expertise in I
 ### 2.3 Deliverables for Portfolio
 - [ ] Custom Wazuh detection rules with documentation
 - [ ] Alert triage playbook (decision tree for common alerts)
-- [ ] Attack detection writeup: "How I detected X attack using Y technique"
+- [x] Attack detection writeup: "Detecting SMB Brute Force Attacks with Wazuh SIEM"
 
 ---
 
