@@ -47,7 +47,7 @@ A structured progression from foundational skills to career-ready expertise in I
 | Exercise | Attack (Kali) | Detection (Wazuh) | Status |
 |----------|---------------|-------------------|--------|
 | Port Scan Detection | nmap scans | Detect scan patterns | [ ] |
-| Brute Force Detection | hydra/medusa | Failed login correlation | [ ] |
+| Brute Force Detection | hydra/medusa | Failed login correlation | [x] |
 | Suspicious Process | Reverse shell | Process creation alerts | [ ] |
 | Lateral Movement | psexec/wmiexec | Remote execution detection | [ ] |
 | Persistence Detection | Scheduled tasks, registry | Persistence mechanism alerts | [ ] |
@@ -169,7 +169,7 @@ A structured progression from foundational skills to career-ready expertise in I
 | 2026-01-16 | Windows 11 VM installed (WS01) | Phase 1 | 8GB RAM, 4 cores, 80GB disk |
 | 2026-01-17 | WS01 joined to lab.local domain | Phase 1 | Fixed DC01 static IP (was DHCP), configured DNS |
 | 2026-01-17 | Wazuh agents confirmed on WS01 + Ubuntu | Phase 1 | Upgraded Wazuh to 4.14.2, all services running |
-| 2026-01-17 | **NEXT: Brute Force Detection exercise** | Phase 2 | First portfolio piece - use hydra from Kali, detect in Wazuh |
+| 2026-01-20 | Completed Brute Force Detection exercise | Phase 2 | First portfolio piece - CrackMapExec attack, Wazuh detection, writeup created |
 
 ---
 
