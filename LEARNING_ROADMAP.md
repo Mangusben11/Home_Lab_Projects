@@ -170,6 +170,7 @@ A structured progression from foundational skills to career-ready expertise in I
 | 2026-01-17 | WS01 joined to lab.local domain | Phase 1 | Fixed DC01 static IP (was DHCP), configured DNS |
 | 2026-01-17 | Wazuh agents confirmed on WS01 + Ubuntu | Phase 1 | Upgraded Wazuh to 4.14.2, all services running |
 | 2026-01-20 | Completed Brute Force Detection exercise | Phase 2 | First portfolio piece - CrackMapExec attack, Wazuh detection, writeup created |
+| 2026-01-20 | **NEXT: Choose second portfolio exercise** | Phase 2 | Options: Reverse Shell Detection, Kerberoasting, or Memory Forensics |
 
 ---
 
