@@ -109,14 +109,14 @@ A structured progression from foundational skills to career-ready expertise in I
 |----------|-------|-------|--------|
 | Disk Imaging | Ubuntu Client | dd, FTK Imager | [ ] |
 | File System Analysis | Disk image | Autopsy, Sleuth Kit | [ ] |
-| Memory Acquisition | Windows 11 | WinPMEM, DumpIt | [ ] |
-| Memory Analysis | Memory dump | Volatility 3 | [ ] |
+| Memory Acquisition | Windows 11 | WinPMEM, DumpIt | [x] |
+| Memory Analysis | Memory dump | Volatility 3 | [x] |
 | Malware Triage | FLARE VM | PEStudio, YARA | [ ] |
 | Dynamic Malware Analysis | FLARE VM | Process Monitor, Wireshark | [ ] |
 | Incident Timeline | Compromised VM | Plaso, log2timeline | [ ] |
 
 ### 4.3 Deliverables for Portfolio
-- [ ] Forensic investigation report (simulated incident)
+- [x] Forensic investigation report: "Memory Forensics - Detecting Encoded PowerShell Execution with Volatility 3"
 - [ ] Malware analysis report with IOCs
 - [ ] Incident timeline reconstruction
 
@@ -170,7 +170,9 @@ A structured progression from foundational skills to career-ready expertise in I
 | 2026-01-17 | WS01 joined to lab.local domain | Phase 1 | Fixed DC01 static IP (was DHCP), configured DNS |
 | 2026-01-17 | Wazuh agents confirmed on WS01 + Ubuntu | Phase 1 | Upgraded Wazuh to 4.14.2, all services running |
 | 2026-01-20 | Completed Brute Force Detection exercise | Phase 2 | First portfolio piece - CrackMapExec attack, Wazuh detection, writeup created |
-| 2026-01-20 | **NEXT: Choose second portfolio exercise** | Phase 2 | Options: Reverse Shell Detection, Kerberoasting, or Memory Forensics |
+| 2026-02-04 | Simulated encoded PowerShell attack on WS01, captured memory with WinPMEM | Phase 4 | 9GB memdump.raw |
+| 2026-02-07 | Completed Memory Forensics analysis with Volatility 3 | Phase 4 | Second portfolio piece - decoded encoded PS payload, process tree analysis, malfind triage |
+| 2026-02-07 | **NEXT: Choose third portfolio exercise** | - | Options: Reverse Shell Detection (Phase 2), Kerberoasting (Phase 3), or Malware Analysis (Phase 4) |
 
 ---
 
