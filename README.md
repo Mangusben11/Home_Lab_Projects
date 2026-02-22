@@ -89,5 +89,5 @@ Forensics: Volatility 3, WinPMEM, FLARE VM, Wireshark
 
 Feel free to connect if you have questions about this lab or want to discuss security topics.
 
-LinkedIn: www.linkedin.com/in/ben-mangus 
+LinkedIn: www.linkedin.com/in/ben-mangus |  
 Email: Mangusben11@gmail.com
